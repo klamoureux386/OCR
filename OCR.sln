@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "OCR_UI", "OCR_UI\OCR_UI.esproj", "{35C877B5-7BC6-476F-958E-B38B743768D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCR_Backend", "OCR_Backend\OCR_Backend.csproj", "{89E54A0C-A1A7-4F99-AEFA-7A25D5AB1BBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C877B5-7BC6-476F-958E-B38B743768D6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{89E54A0C-A1A7-4F99-AEFA-7A25D5AB1BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E54A0C-A1A7-4F99-AEFA-7A25D5AB1BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E54A0C-A1A7-4F99-AEFA-7A25D5AB1BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E54A0C-A1A7-4F99-AEFA-7A25D5AB1BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E71A895-E64D-41CA-B141-B1865B5EDB0F}
+	EndGlobalSection
+EndGlobal
