@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Client, WeatherForecast } from '../api.generated.clients';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +8,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public forecasts?: WeatherForecast[];
+  // public forecastData?: WeatherForecastData[];
+  public forecasts: WeatherForecast[] = [];
 
-  constructor(http: HttpClient) {
-    http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
+  constructor(http: HttpClient,
+    weatherClient: Client) {
+    // http.get<WeatherForecastData[]>('/weatherforecast').subscribe(result => {
+    //   this.forecastData = result;
+    // }, error => console.error(error));
+
+    weatherClient.weatherForecast().subscribe(result => {
       this.forecasts = result;
-    }, error => console.error(error));
+    }, error => console.error(error))
+
   }
 
   title = 'OCR_UI';
 }
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
+// interface WeatherForecastData {
+//   date: string;
+//   temperatureC: number;
+//   temperatureF: number;
+//   summary: string;
+// }
