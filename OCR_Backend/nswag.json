@@ -150,7 +150,7 @@
       "httpClass": "HttpClient",
       "useSingletonProvider": false,
       "injectionTokenType": "InjectionToken",
-      "rxJsVersion": 6.0,
+      "rxJsVersion": 7.5,
       "dateTimeType": "Date",
       "nullValue": "Undefined",
       "generateClientClasses": true,
